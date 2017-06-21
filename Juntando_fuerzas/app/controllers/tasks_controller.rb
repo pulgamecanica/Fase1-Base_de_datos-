@@ -12,12 +12,9 @@ class TasksController
       @model.create(@view.create)
     when 3
       @model.delete(@view.delete)
-    when 4
-      @model.update(@view.update)
-    when 5
-      exit
     else
       puts "Nothing to do here"
+      exit
     end
     option = @view.menu
     options(option)
